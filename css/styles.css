@@ -1,0 +1,451 @@
+
+/*FONT*/
+
+@font-face {
+    font-family: 'Inter';
+    src: url('../fonts/Inter-VariableFont_opsz,wght.ttf') format('truetype');
+    font-weight: 100 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+/*COLORS AND GENERAL SETTINGS*/
+
+:root {
+    --bs-red: #DA0D1E;
+    --bs-blue: #084973;
+    --bs-yellow: #FFC20B;
+    --bs-black: #000000;
+    --bs-white: #FFFFFF;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Inter', Arial, sans-serif;
+}
+
+
+/*HEADER*/
+
+.site-header {
+    background-color: var(--bs-white);
+    color: var(--bs-black);
+    padding: 25px 4% 15px;
+}
+
+/* Logo */
+
+.logo img {
+    display: block;
+    width: 185px;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Navigation */
+
+.main-nav {
+    margin-top: 25px;
+}
+
+.navbar-nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 75px;
+
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar-nav a {
+    color: var(--bs-black);
+    text-decoration: none;
+    font-size: 19px;
+    font-weight: 400;
+    transition: color 0.2s ease;
+}
+
+.navbar-nav a:hover,
+.navbar-nav a.active {
+    color: var(--bs-yellow);
+}
+
+
+/*MAIN CONTACT SECTION*/
+
+.contact-page {
+    background-color: var(--bs-blue);
+    color: var(--bs-white);
+
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-main {
+    flex: 1;
+    padding: 75px 4%;
+}
+
+.contact-layout {
+    display: flex;
+    align-items: flex-start;
+    gap: 35px;
+
+    width: 100%;
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+
+/*LEFT SIDE: CONTACT INFORMATION*/
+
+.contact-information {
+    flex: 1;
+    min-width: 0;
+}
+
+.contact-intro {
+    margin-bottom: 58px;
+}
+
+.contact-header {
+    font-size: 32px;
+    font-weight: 800;
+    margin: 0 0 12px;
+}
+
+.contact-intro p {
+    font-size: 18px;
+    line-height: 1.35;
+    margin: 0;
+}
+
+
+/*CONTACT FORM*/
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+/* Name and email fields */
+
+.form-row {
+    display: flex;
+    gap: 60px;
+}
+
+.contact-form input {
+    flex: 1;
+    min-width: 0;
+    height: 41px;
+    padding: 10px 12px;
+
+    background-color: var(--bs-white);
+    color: var(--bs-black);
+
+    border: 1px solid #D5D5D5;
+    border-radius: 7px;
+
+    font-family: inherit;
+    font-size: 14px;
+}
+
+/* Message box */
+
+.contact-form textarea {
+    width: 100%;
+    min-height: 235px;
+    padding: 14px 12px;
+
+    background-color: var(--bs-white);
+    color: var(--bs-black);
+
+    border: 1px solid #D5D5D5;
+    border-radius: 7px;
+
+    font-family: inherit;
+    font-size: 14px;
+
+    resize: vertical;
+}
+
+/* Input focus effect */
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: 2px solid var(--bs-yellow);
+    border-color: var(--bs-yellow);
+}
+
+
+/*CONTACT DETAILS AND SEND BUTTON*/
+
+.form-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.contact-details {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+
+    font-size: 18px;
+    line-height: 1.3;
+}
+
+.contact-details strong {
+    margin-bottom: 2px;
+}
+
+.contact-details a {
+    color: var(--bs-white);
+    text-decoration: none;
+}
+
+.contact-details a:hover {
+    text-decoration: underline;
+}
+
+/* Send button */
+
+.send-button {
+    background-color: var(--bs-yellow);
+    color: var(--bs-white);
+
+    border: none;
+    border-radius: 17px;
+
+    padding: 17px 65px;
+
+    font-family: inherit;
+    font-size: 22px;
+    font-weight: 700;
+
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.send-button:hover {
+    background-color: #E5AD00;
+}
+
+
+/*RIGHT SIDE: MAP*/
+
+.contact-map {
+    flex: 1;
+    min-width: 0;
+}
+
+.contact-map img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+
+/*FOOTER*/
+
+.site-footer {
+    background-color: var(--bs-yellow);
+    color: var(--bs-black);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 18px 4%;
+}
+
+.footer-links {
+    display: flex;
+    gap: 25px;
+
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links a {
+    color: var(--bs-black);
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.site-footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+
+/*TABLET SCREENS*/
+
+@media (max-width: 900px) {
+
+    .contact-main {
+        padding: 55px 5%;
+    }
+
+    .contact-layout {
+        gap: 25px;
+    }
+
+    .form-row {
+        gap: 15px;
+    }
+
+    .contact-intro {
+        margin-bottom: 35px;
+    }
+
+    .contact-intro p {
+        font-size: 16px;
+    }
+
+    .contact-details {
+        font-size: 15px;
+    }
+
+    .send-button {
+        padding: 14px 35px;
+        font-size: 18px;
+    }
+
+}
+
+
+/*MOBILE SCREENS*/
+
+@media (max-width: 650px) {
+
+    /* Header */
+
+    .site-header {
+        padding: 20px 6%;
+    }
+
+    .logo img {
+        width: 160px;
+    }
+
+    .main-nav {
+        margin-top: 20px;
+    }
+
+    .navbar-nav {
+        gap: 25px;
+        flex-wrap: wrap;
+    }
+
+    .navbar-nav a {
+        font-size: 16px;
+    }
+
+
+    /* Stack contact section vertically */
+
+    .contact-main {
+        padding: 40px 6%;
+    }
+
+    .contact-layout {
+        flex-direction: column;
+        gap: 45px;
+    }
+
+    .contact-information,
+    .contact-map {
+        width: 100%;
+    }
+
+
+    /* Heading and description */
+
+    .contact-header {
+        font-size: 28px;
+    }
+
+    .contact-intro p {
+        font-size: 15px;
+        line-height: 1.5;
+    }
+
+    .contact-intro {
+        margin-bottom: 30px;
+    }
+
+
+    /* Stack name and email fields */
+
+    .form-row {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .contact-form {
+        gap: 20px;
+    }
+
+    .contact-form input {
+        width: 100%;
+        height: 45px;
+    }
+
+    .contact-form textarea {
+        min-height: 180px;
+    }
+
+
+    /* Contact details and button */
+
+    .form-bottom {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 25px;
+    }
+
+    .contact-details {
+        font-size: 15px;
+    }
+
+    .send-button {
+        width: 100%;
+        padding: 15px;
+        font-size: 18px;
+    }
+
+
+    /* Map */
+
+    .contact-map img {
+        width: 100%;
+        height: auto;
+    }
+
+
+    /* Footer */
+
+    .site-footer {
+        flex-direction: column;
+        gap: 12px;
+        text-align: center;
+    }
+
+}
