@@ -47,6 +47,27 @@ body {
     height: auto;
 }
 
+/*HOMEPAGE*/
+
+.home-cover {
+    width: 100%;
+    padding: 0 4%;
+    margin: 25px auto 0;
+}
+
+.home-cover img {
+    display: block;
+    width: 100%;
+    max-width: 1500px;
+    height: auto;
+    margin: 0 auto;
+}
+
+.home-main {
+    flex: 1;
+    padding: 75px 4%;
+}
+
 /* Navigation */
 
 .main-nav {
