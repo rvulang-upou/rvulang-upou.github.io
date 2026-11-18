@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Contact Us | Mitolokal</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
     <meta name="description" content="Get in touch with Mitolokal.">
 
     <link rel="stylesheet" href="css/styles.css">
@@ -29,63 +30,74 @@
 
     </header>
 
-<!--MAIN CONTACT SECTION-->
-    <main class="contact-main">
-        <div class="contact-layout">
-            <!--LEFT SIDE: CONTACT FORM-->
-            <section class="contact-information">
-                <div class="contact-intro">
-                    <h1 class="contact-header">CONTACT US</h1>
-                    <p>
-                        For any questions and concerns, feel free to reach out to us.
+    <!--MAIN CONTACT SECTION-->
+    <main class="contact-main container flex-grow-1 py-5">
+        <div class="row align-items-center g-5">
+
+            <!--CONTACT FORM-->
+            <section class="col-12 col-lg-6 contact-information">
+                <div>
+                    <h1 class="contact-header mb-3">CONTACT US</h1>
+                    <p class="contact-description mb-5">
+                        For any questions and concerns, feel free to reach out to us.<br>
                         Your email is required so we can respond to your message.
                     </p>
                 </div>
-                <form class="contact-form">
+                
+                <form class="contact-form" id="contactform">
 
-                    <!--NAME AND EMAIL-->
-                    <div class="form-row">
-                        <!--NAME-->
-                        <input type="text" name="full-name" placeholder="Name (Optional)" autocomplete="name">
-                        <!--EMAIL-->
-                        <input type="email" name="email" placeholder="E-mail (Required)" autocomplete="email" required>
+                    <!--Name and Email-->
+                    <div class="row g-3 mb-4">
+                        <div class="col-12 col-md-6">
+                            <label for="full-name" class="form-label">Name (optional)</label>
+                            <input type="text" class="form-control" name="full-name" id="full-name" placeholder="e.g. Juan Dela Cruz" autocomplete="name">
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <label for="email" class="form-label">Email (required)</label>
+                            <input type="email" class="form-control" name="email" id="email" placeholder="e.g. juan@gmail.com" autocomplete="email" required>
+                        </div>
                     </div>
 
-                    <!--MESSAGE-->
-                    <textarea name="message" placeholder="Type your message here . . ." rows="6" required></textarea>
+                    <!--Message-->
+                    <div class="col-12 mb-3">
+                        <label for="message" class="form-label">Message (required)</label>
+                        <textarea class="form-control message-box" name="message" id="message" placeholder="Type your message here..." required></textarea>
+                    </div>
 
-                    <!--CONTACT DETAILS AND SEND BUTTON-->
-                    <div class="form-bottom">
-                        <div class="contact-details">
-                            <strong>You can also contact us through:</strong>
-                            <a href="mailto:mitolokal@gmail.com">mitolokal@gmail.com</a>
-                            <a href="tel:+63912401947">
+                    <!--Additional Contact Information and Send Button-->
+                    <div class="row align-items-center g-3">
+                        <div class="col-12 col-md-7 contact-details">
+                            <p class="fw-bold mb-1">
+                                You can also contact us through:
+                            </p>
+                            <p>
+                                mitolokal@gmail.com<br>
                                 +63 912 401 947
-                            </a>
+                            </p>
                         </div>
 
-                        <!--BUTTON-->
-                        <button type="submit" class="send-button">
-                            SEND
-                        </button>
+                        <div class="col-12 col-md-5 text-md-end">
+                            <button type="submit" class="btn send-button">SEND</button>
+                        </div>
                     </div>
                 </form>
             </section>
-
-            <!--MAP -->
-            <div class="contact-map">
-                <img src="images/map.jpg" alt="Map showing the location of Mitolokal's main office">
-            </div>
+                
+            <section class="col-12 col-lg-6 contact-map">
+                <img src="images/map.jpg" alt="Location of Mitlokoal's Main office at 88 Corporate Center" class="img-fluid">
+            </section>
         </div>
     </main>
 
-    <!--FOOTER-->
-    <footer class="site-footer">
-        <ul class="footer-links">
-            <li><a href="privacy.html">Privacy</a></li>
-            <li><a href="terms.html">Terms</a></li>
-        </ul>
-        <p>&copy; Mitolokal. All rights reserved.</p>
-    </footer>
+<!--FOOTER-->
+<footer class="site-footer">
+    <ul class="footer-links">
+        <li><a href="privacy.html">Privacy</a></li>
+        <li><a href="terms.html">Terms</a></li>
+    </ul>
+    <p>&copy; Mitolokal. All rights reserved.</p>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<script src="js/contact.js"></script>
 </body>
 </html>
