@@ -20,7 +20,7 @@
 
         <nav class="main-nav">
             <ul class="navbar-nav">
-                <li><a class="active" href="index.html">Home</a></li>
+                <li><a class="active" href="homepage.html">Home</a></li>
                 <li><a href="shop.html">Shop</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
@@ -35,8 +35,103 @@
     </section>
 
     <!--MAIN HOME SECTION-->
-    <main class="home-main">
-        <!-- Blank body content goes here -->
+    <main class="container py-12" style="max-width: 1500px; margin: 0 auto; padding: 75px 4%;">
+        
+        <!-- SHIRTS SECTION -->
+        <section style="margin-bottom: 100px;">
+            <h2 style="font-size: 32px; font-weight: 800; margin-bottom: 35px; color: var(--bs-black);">SHIRTS</h2>
+
+            <!-- Row with three equal-sized product cards -->
+            <div class="row g-7 mb-12" id="features" style="display: flex; gap: 35px; flex-wrap: wrap; align-items: stretch;">
+                
+                <!-- Card 1: Blue (Don't Be Late Tee) -> Links to product1.html -->
+                <div class="md:col-4" style="flex: 1; min-width: 280px; display: flex;">
+                    <a href="product1.html" style="text-decoration: none; color: inherit; width: 100%; display: flex;">
+                        <div class="card" style="background-color: var(--bs-blue); border: none; border-radius: 0; padding: 30px; color: var(--bs-white); width: 100%; display: flex; flex-direction: column; justify-content: space-between;">
+                            <div class="card-body" style="padding: 0; display: flex; flex-direction: column; height: 100%;">
+                                <div style="background-color: var(--bs-white); padding: 25px; display: flex; justify-content: center; align-items: center; margin-bottom: 25px;">
+                                    <img src="images/Don't Be Late Tee.png" alt="Don't Be Late Tee" style="max-width: 100%; height: auto; display: block;">
+                                </div>
+                                <div style="flex-grow: 1; display: flex; flex-direction: column; justify-content: space-between;">
+                                    <div>
+                                        <h5 style="font-size: 24px; font-weight: 700; margin: 0 0 10px 0;">Don't Be Late Tee</h5>
+                                        <p class="fg-2 mb-0" style="font-size: 15px; line-height: 1.4; opacity: 0.9; margin: 0 0 20px 0;">Time waits for no one, so show up in the Anggitay shirt, inspired by...</p>
+                                    </div>
+                                    <span style="font-size: 22px; font-weight: 800;">₱499</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Card 2: Red #DA0D1E (Everyday Comfort Tee) -->
+                <div class="md:col-4" style="flex: 1; min-width: 280px; display: flex;">
+                    <div class="card" style="background-color: #DA0D1E; border: none; border-radius: 0; padding: 30px; color: var(--bs-white); width: 100%; display: flex; flex-direction: column; justify-content: space-between;">
+                        <div class="card-body" style="padding: 0; display: flex; flex-direction: column; height: 100%;">
+                            <div style="background-color: var(--bs-white); padding: 25px; display: flex; justify-content: center; align-items: center; margin-bottom: 25px;">
+                                <img src="images/Do Good Work.png" alt="Everyday Comfort Tee" style="max-width: 100%; height: auto; display: block;">
+                            </div>
+                            <div style="flex-grow: 1; display: flex; flex-direction: column; justify-content: space-between;">
+                                <div>
+                                    <h5 style="font-size: 24px; font-weight: 700; margin: 0 0 10px 0;">Everyday Comfort Tee</h5>
+                                    <p class="fg-2 mb-0" style="font-size: 15px; line-height: 1.4; opacity: 0.9; margin: 0 0 20px 0;">Stay Fresh in the heat with this comfortably fashionable shirt...</p>
+                                </div>
+                                <span style="font-size: 22px; font-weight: 800;">₱499</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3: Green #405731 (Do Good Work Tee) -->
+                <div class="md:col-4" style="flex: 1; min-width: 280px; display: flex;">
+                    <div class="card" style="background-color: #405731; border: none; border-radius: 0; padding: 30px; color: var(--bs-white); width: 100%; display: flex; flex-direction: column; justify-content: space-between;">
+                        <div class="card-body" style="padding: 0; display: flex; flex-direction: column; height: 100%;">
+                            <div style="background-color: var(--bs-white); padding: 25px; display: flex; justify-content: center; align-items: center; margin-bottom: 25px;">
+                                <img src="images/Do Good Work Tee.png" alt="Do Good Work Tee" style="max-width: 100%; height: auto; display: block;">
+                            </div>
+                            <div style="flex-grow: 1; display: flex; flex-direction: column; justify-content: space-between;">
+                                <div>
+                                    <h5 style="font-size: 24px; font-weight: 700; margin: 0 0 10px 0;">Do Good Work Tee</h5>
+                                    <p class="fg-2 mb-0" style="font-size: 15px; line-height: 1.4; opacity: 0.9; margin: 0 0 20px 0;">Work hard and spread good energy. Rock it with Maginoong Tikbalang...</p>
+                                </div>
+                                <span style="font-size: 22px; font-weight: 800;">₱499</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ABOUT MITOLOKAL SECTION -->
+        <section>
+            <h2 style="font-size: 32px; font-weight: 800; margin-bottom: 35px; color: var(--bs-black);">ABOUT MITOLOKAL</h2>
+
+            <div style="display: flex; gap: 45px; flex-wrap: wrap; align-items: flex-start;">
+                <!-- Left: Stock Image sized to match paragraph block height -->
+                <div style="flex: 0 0 auto; max-width: 100%;">
+                    <img src="images/homepage-adobestock.png" alt="About Mitolokal" style="height: 390px; width: auto; max-width: 100%; display: block; border-radius: 0;">
+                </div>
+
+                <!-- Right: Text Content -->
+                <div style="flex: 1; min-width: 300px; display: flex; flex-direction: column; gap: 20px; color: #333;">
+                    <h3 style="font-size: 24px; font-weight: 700; color: var(--bs-black); margin: 0;">Wear the Myth, be Legendary</h3>
+                    
+                    <p style="font-size: 16px; line-height: 1.6; margin: 0;">
+                        At Mitolokal, we bring the wonders of Philippine mythology into everyday fashion. Inspired by the legendary creatures and folklore passed down through generations, we transform our rich cultural heritage into our designs. These retro-inspired T-shirts celebrate the stories that make us proud to be Filipinos.
+                    </p>
+
+                    <p style="font-size: 16px; line-height: 1.6; margin: 0;">
+                        To ensure quality and comfort, our shirts are made from 100% cotton, offering a soft and comfortable feel that you can enjoy every day. At Mitolokal, we value your comfort while creating designs that celebrate our cultural identity.
+                    </p>
+
+                    <p style="font-size: 16px; line-height: 1.6; margin: 0;">
+                        Mitolokal invites you to wear something with a story to tell, a design to cherish, and a new story to discover. Through every shirt, we hope to keep our myths and legends alive, inspiring a new generation to appreciate the richness of Philippine folklore.
+                    </p>
+                </div>
+            </div>
+        </section>
+
     </main>
 
     <!--FOOTER-->
