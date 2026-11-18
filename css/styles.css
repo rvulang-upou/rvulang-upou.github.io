@@ -98,6 +98,122 @@ body {
     color: var(--bs-yellow);
 }
 
+/*PRODUCT PAGE<------------------------------------------------------------*/
+.product-page {
+    min-height: 100vh;
+    display:flex;
+    flex-direction: column;
+    background-color: var(--bs-white);
+}
+
+.product-main {
+    flex-grow: 1;
+}
+
+.product-image {
+    display: block;
+    width:100%;
+    max-width: 400px;
+    margin:0 auto;
+    border: 1px solid #000000;
+    border-radius: 4px;
+}
+
+.product-info {
+    padding-top: 10px;
+}
+
+.product-header {
+    color: var(--bs-red);
+    font-size: 28px;
+    font-weight: 700px;
+}
+
+/*Size Button (XS,S,M,L,XL)*/
+.product-form {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.size-selection {
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+.size-options {
+    display: flex;
+    flex-direction: row;
+    gap: 7px;
+}
+
+.size-options label {
+    cursor: pointer;
+}
+
+.size-options input {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+}
+
+/*Box for Size Button*/
+.size-options span {
+    display: block;
+
+    background-color: #DDDDDD;
+    color: var(--bs-black);
+
+    padding: 5px 9px;
+    border-radius: 8px;
+
+    font-size: 15px;
+    text-align: center;
+}
+
+/*Appearance of Selected Size*/
+.size-options input:checked + span {
+    outline: 2px solid var(--bs-yellow);
+    background-color: var(--bs-blue);
+    color: var(--bs-white);
+}
+
+.size-options input:focus-visible + span {
+    outline: 2px solid var(--bs-blue);
+}
+
+/*Quantity*/
+.quantity-input{
+    width: 90px;
+    background-color: #DDDDDD;
+}
+
+/*Order Now*/
+.order-button{
+    background-color: var(--bs-blue);
+    color: var(--bs-yellow);
+    font-size: 16px;
+    font-weight: 700;
+    padding: 12px 30px;
+    border-radius: 12px;
+}
+
+.order-button:hover{
+    background-color: #063975;
+    color: var(--bs-yellow);
+}
+
+/*ADJUSTMENT FOR SMALLER SCREENS*/
+@media (max-width: 576px){
+    .product-header{
+        font-size: 23px
+    }
+
+    .order-button{
+        width: 100%;
+    }
+}
 
 /*MAIN CONTACT SECTION*/
 
