@@ -3,31 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Home | Mitolokal</title>
-    <meta name="description" content="Welcome to Mitolokal.">
-
-    <link rel="stylesheet" href="css/styles.css">
+    <title>Terms and Conditions - Mitolokal</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-    <header class="site-header">
-
-        <div class="logo">
-            <img src="images/mitolokallogo.jpg" alt="Mitolokal Logo">
-        </div>
-
-        <nav class="main-nav">
-            <ul class="navbar-nav">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="index.html#shop">Shop</a></li>
-                <li><a href="index.html#about">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-
-    </header>
+    <div class="page-wrapper">
+        <header class="site-header">
+            <div class="logo-container">
+                <img src="mitolokallogo.jpg" alt="Mitolokal Logo" class="logo" onerror="this.style.display='none'; document.getElementById('fallback-logo').style.display='block';">
+                <span id="fallback-logo" class="fallback-logo" style="display:none;"> MITOLOKAL </span>
+            </div>
+            <nav class="main-nav">
+                <a href="#home">Home</a>
+                <a href="#shop">Shop</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </header>
 
         <main class="policy-container">
             <div class="policy-header">
@@ -37,21 +33,6 @@
                     Welcome to Mitolokal! These Terms and Conditions govern your use of the Mitolokal website, services, and purchase of our T-shirt products. By accessing our site or purchasing products from us, you agree to be bound by these Terms.
                 </p>
             </div>
-
-            <section class="toc-section">
-                <h2>What you will find in these Terms and Conditions</h2>
-                <ol class="toc-list">
-                    <li><a href="#section-1">General Conditions</a></li>
-                    <li><a href="#section-2">Products &amp; Apparel Specifications</a></li>
-                    <li><a href="#section-3">Orders, Pricing, and Payment</a></li>
-                    <li><a href="#section-4">International Shipping &amp; Delivery</a></li>
-                    <li><a href="#section-5">Returns, Exchanges, and Refunds</a></li>
-                    <li><a href="#section-6">Intellectual Property</a></li>
-                    <li><a href="#section-7">User Conduct &amp; Prohibited Uses</a></li>
-                    <li><a href="#section-8">Limitation of Liability</a></li>
-                    <li><a href="#section-9">Changes to Terms</a></li>
-                </ol>
-            </section>
 
             <section id="section-1" class="policy-section">
                 <h3>1. General Conditions</h3>
@@ -132,17 +113,13 @@
         </main>
     </div>
 
-    <!--FOOTER-->
     <footer class="site-footer">
-        <ul class="footer-links">
-            <li><a href="privacy.html">Privacy</a></li>
-            <li><a href="#">Terms</a></li>
-        </ul>
-        <p>&copy; Mitolokal. All rights reserved.</p>
+        <div class="footer-links">
+            <span>Mitolokal &copy; 2026</span>
+            <a href="privacy.html">Privacy</a>
+            <a href="terms.html" class="active-footer-link">Terms</a>
+        </div>
     </footer>
-
-</body>
-</html>
 
     <button id="backToTop" title="Go to top">↑ Top</button>
 
