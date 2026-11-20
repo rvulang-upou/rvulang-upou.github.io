@@ -572,3 +572,21 @@ html {
     margin: 0;
     font-size: 14px;
 }
+
+/* ===== FORM ERROR MESSAGES (used by js/contact.js and js/order.js) ===== */
+
+.form-error {
+    display: inline-block;
+    margin: 8px 0 0;
+    padding: 4px 10px;
+    background-color: #FFFFFF;
+    color: #DA0D1E;
+    font-weight: 700;
+    font-size: 16px;
+    border-radius: 4px;
+}
+
+.input-error,
+.input-error:focus {
+    border: 3px solid #DA0D1E !important;
+}
