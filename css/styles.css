@@ -26,11 +26,22 @@
 /*COLORS AND GENERAL SETTINGS*/
 
 :root {
+    --bs-tind-red: #F15C68;
     --bs-red: #DA0D1E;
+    --bs-shade-red: #8A1220;
+    --bs-tint-blue: #5AA5D6;
     --bs-blue: #084973;
+    --bs-shade-blue: #405731;
+    --bs-tint-yellow: #FBDA74;
     --bs-yellow: #FFC20B;
+    --bs-shade-yellow: #A57F0D;
     --bs-black: #000000;
+    --bs-grayer: #222222;
+    --bs-grayest: #1A1A1A;
     --bs-white: #FFFFFF;
+    --bs-cream: #F4EFE3;
+    --bs-gray: #CFC8B5;
+    --bs-dark-gray: #555555;
 }
 
 *, *::before, *::after {
@@ -90,7 +101,7 @@ body {
 
 .navbar-nav a:hover,
 .navbar-nav a.active {
-    color: var(--bs-yellow);
+    color: var(--bs-blue);
 }
 
 
@@ -143,7 +154,7 @@ body {
 }
 
 .product-header {
-    color: var(--bs-red);
+    color: var(--bs-shade-red);
     font-size: 28px;
     font-weight: 700;
 }
@@ -181,7 +192,7 @@ body {
 .size-options span {
     display: block;
 
-    background-color: #DDDDDD;
+    background-color: var(--bs-gray);
     color: var(--bs-black);
 
     padding: 5px 9px;
@@ -205,7 +216,7 @@ body {
 /*Quantity*/
 .quantity-input {
     width: 90px;
-    background-color: #DDDDDD;
+    background-color: var(--bs-gray);
 }
 
 /*Order Now*/
@@ -219,7 +230,7 @@ body {
 }
 
 .order-button:hover {
-    background-color: #063975;
+    background-color: var(--bs-blue);
     color: var(--bs-yellow);
 }
 
@@ -265,7 +276,7 @@ body {
     background-color: var(--bs-white);
     color: var(--bs-black);
 
-    border: 1px solid #CCCCCC;
+    border: 1px solid var(--bs-gray);
     border-radius: 6px;
 
     padding: 12px 15px;
@@ -321,7 +332,7 @@ body {
 }
 
 .send-button:hover {
-    background-color: #E5AD00;
+    background-color: var(--bs-yellow);
     color: var(--bs-white);
 }
 
@@ -393,7 +404,7 @@ body.policy-page {
     width: 100%;
     max-width: 1100px;
     margin: 0 auto;
-    background-color: #ffffff;
+    background-color: var(--bs-white);
     flex: 1;
 }
 
@@ -473,12 +484,12 @@ body.policy-page {
 }
 
 .last-updated {
-    color: #555555;
+    color: var(--bs-dark-gray);
     margin: 0 0 18px 0;
 }
 
 .intro-text {
-    color: #222222;
+    color: var(--bs-grayer);
     margin: 0;
 }
 
@@ -498,7 +509,7 @@ body.policy-page {
 
 .toc-list a {
     text-decoration: none;
-    color: #1a1a1a;
+    color: var(--bs-grayest);
 }
 
 .toc-list a:hover {
@@ -513,11 +524,11 @@ body.policy-page {
 
 .policy-section p {
     margin: 0 0 10px 0;
-    color: #222222;
+    color: var(--bs-grayer);
 }
 
 .policy-section a {
-    color: #1a1a1a;
+    color: var(--bs-grayest);
     text-decoration: underline;
     word-break: break-word;
 }
@@ -553,8 +564,8 @@ body.policy-page {
     z-index: 99;
     border: none;
     outline: none;
-    background-color: #1a1a1a;
-    color: #ffffff;
+    background-color: var(--bs-grayest);
+    color: var(--bs-white);
     cursor: pointer;
     padding: 10px 15px;
     border-radius: 4px;
