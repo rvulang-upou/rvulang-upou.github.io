@@ -94,6 +94,7 @@ body {
     color: var(--bs-yellow);
 }
 
+
 /*HOMEPAGE<---------------------------------------------------------------*/
 
 .home-cover {
@@ -115,10 +116,12 @@ body {
     padding: 75px 4%;
 }
 
+
 /*PRODUCT PAGE<------------------------------------------------------------*/
+
 .product-page {
     min-height: 100vh;
-    display:flex;
+    display: flex;
     flex-direction: column;
     background-color: var(--bs-white);
 }
@@ -129,9 +132,9 @@ body {
 
 .product-image {
     display: block;
-    width:100%;
+    width: 100%;
     max-width: 400px;
-    margin:0 auto;
+    margin: 0 auto;
     border: 1px solid var(--bs-black);
     border-radius: 4px;
 }
@@ -201,13 +204,13 @@ body {
 }
 
 /*Quantity*/
-.quantity-input{
+.quantity-input {
     width: 90px;
     background-color: #DDDDDD;
 }
 
 /*Order Now*/
-.order-button{
+.order-button {
     background-color: var(--bs-blue);
     color: var(--bs-yellow);
     font-size: 16px;
@@ -216,24 +219,26 @@ body {
     border-radius: 12px;
 }
 
-.order-button:hover{
+.order-button:hover {
     background-color: #063975;
     color: var(--bs-yellow);
 }
 
 /*ADJUSTMENT FOR SMALLER SCREENS*/
-@media (max-width: 576px){
-    .product-header{
+@media (max-width: 576px) {
+    .product-header {
         font-size: 23px;
     }
 
-    .order-button{
+    .order-button {
         width: 100%;
     }
 }
 
+
 /*MAIN CONTACT SECTION<----------------------------------------------------*/
-.contact-page{
+
+.contact-page {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -241,23 +246,23 @@ body {
     color: var(--bs-white);
 }
 
-.contact-main{
+.contact-main {
     flex-grow: 1;
 }
 
-.contact-header{
+.contact-header {
     font-size: 32px;
     font-weight: 700;
 }
 
-.contact-description{
+.contact-description {
     font-size: 16px;
     line-height: 1.5;
     max-width: 550px;
 }
 
 /*CONTACT FORM*/
-.contact-form .form-control{
+.contact-form .form-control {
     background-color: var(--bs-white);
     color: var(--bs-black);
 
@@ -270,39 +275,39 @@ body {
     line-height: 1.5;
 }
 
-.contact-form input{
+.contact-form input {
     height: 42px;
 }
 
-.contact-form .message-box{
+.contact-form .message-box {
     min-height: 180px;
     resize: vertical;
 }
 
-.contact-form .form-control:focus{
+.contact-form .form-control:focus {
     border-color: var(--bs-black);
     box-shadow: 0 0 0 0.2rem var(--bs-yellow);
 }
 
 /*CONTACT DETAILS*/
-.contact-details{
+.contact-details {
     display: flex;
     flex-direction: column;
     font-size: 16px;
     line-height: 1.5;
 }
 
-.contact-details a{
-    color:var(--bs-white);
+.contact-details a {
+    color: var(--bs-white);
     text-decoration: none;
 }
 
-.contact-details a:hover{
+.contact-details a:hover {
     text-decoration: underline;
 }
 
 /*SEND BUTTON*/
-.send-button{
+.send-button {
     background-color: var(--bs-yellow);
     color: var(--bs-blue);
 
@@ -316,13 +321,13 @@ body {
     font-weight: 900;
 }
 
-.send-button:hover{
+.send-button:hover {
     background-color: #E5AD00;
     color: var(--bs-white);
 }
 
 /*MAP*/
-.contact-map img{
+.contact-map img {
     display: block;
     width: 100%;
     height: 600px;
@@ -330,7 +335,7 @@ body {
     border-radius: 6px;
 }
 
-/*MOBILE VERSION OF CONTACT*/
+/*MOBILE VERSION OF CONTACT & SHARED RESPONSIVE RULES*/
 @media (max-width: 767px) {
 
     .site-header {
@@ -370,11 +375,20 @@ body {
 
 }
 
+
 /*PRIVACY AND TERMS------------------------------------------>*/
+
 html {
     scroll-behavior: smooth;
 }
 
+body.policy-page {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--bs-white);
+    color: var(--bs-black);
+}
 
 .page-wrapper {
     width: 100%;
@@ -388,7 +402,6 @@ html {
     padding: 25px 40px 15px 40px;
 }
 
-
 .fallback-logo {
     font-family: 'Tribo', sans-serif;
     font-size: 28px;
@@ -396,8 +409,8 @@ html {
     margin-bottom: 12px;
 }
 
-
 .policy-container {
+    flex: 1;
     width: 100%;
     max-width: 720px;
     margin: 30px auto 60px auto;
@@ -413,30 +426,57 @@ html {
 }
 
 .policy-header h1 {
-    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+}
+
+.toc-section h2,
+.policy-section h3,
+.policy-section h4 {
+    font-family: 'Inter', Arial, sans-serif;
     font-size: 20px;
     font-weight: 700;
     line-height: 1.5;
+    text-align: left;
+    color: var(--bs-black);
+}
+
+.policy-header h1 {
     letter-spacing: 0.5px;
-    margin-bottom: 8px;
+    margin: 0 0 8px 0;
+}
+
+.toc-section h2 {
+    margin: 0 0 10px 0;
+}
+
+.policy-section h3 {
+    margin: 0 0 8px 0;
+}
+
+.policy-section h4 {
+    margin: 16px 0 8px 0;
+}
+
+.last-updated,
+.intro-text,
+.policy-section p,
+.toc-list,
+.dash-list,
+.bullet-list {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
     text-align: left;
 }
 
 .last-updated {
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 1.5;
     color: #555555;
-    margin-bottom: 18px;
-    text-align: left;
+    margin: 0 0 18px 0;
 }
 
 .intro-text {
-    text-align: left;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 1.5;
     color: #222222;
+    margin: 0;
 }
 
 .toc-section {
@@ -444,20 +484,9 @@ html {
     text-align: left;
 }
 
-.toc-section h2 {
-    font-family: 'Inter', sans-serif;
-    font-size: 20px;
-    font-weight: 700;
-    line-height: 1.5;
-    margin-bottom: 10px;
-    text-align: left;
-}
-
 .toc-list {
     padding-left: 24px;
-    font-size: 16px;
-    line-height: 1.5;
-    text-align: left;
+    margin: 0;
 }
 
 .toc-list li {
@@ -471,7 +500,7 @@ html {
 
 .toc-list a:hover {
     text-decoration: underline;
-    color: #000000;
+    color: var(--bs-black);
 }
 
 .policy-section {
@@ -479,45 +508,21 @@ html {
     text-align: left;
 }
 
-.policy-section h3 {
-    font-family: 'Inter', sans-serif;
-    font-size: 20px;
-    font-weight: 700;
-    line-height: 1.5;
-    margin-bottom: 8px;
-    text-align: left;
-}
-
-.policy-section h4 {
-    font-family: 'Inter', sans-serif;
-    font-size: 20px;
-    font-weight: 700;
-    line-height: 1.5;
-    margin-top: 16px;
-    margin-bottom: 8px;
-    text-align: left;
-}
-
 .policy-section p {
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 1.5;
-    margin-bottom: 10px;
+    margin: 0 0 10px 0;
     color: #222222;
-    text-align: left;
 }
 
 .policy-section a {
     color: #1a1a1a;
     text-decoration: underline;
+    word-break: break-word;
 }
 
 .dash-list {
     list-style-type: none;
     padding-left: 5px;
-    font-size: 16px;
-    line-height: 1.5;
-    text-align: left;
+    margin: 0;
 }
 
 .dash-list li {
@@ -530,9 +535,7 @@ html {
 
 .bullet-list {
     padding-left: 22px;
-    font-size: 16px;
-    line-height: 1.5;
-    text-align: left;
+    margin: 0;
 }
 
 .bullet-list li {
@@ -553,12 +556,12 @@ html {
     padding: 10px 15px;
     border-radius: 4px;
     font-size: 13px;
-    font-weight: bold;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    font-weight: 700;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
 }
 
 #backToTop:hover {
-    background-color: #ffcc00;
+    background-color: var(--bs-yellow);
     color: #1a1a1a;
 }
 
@@ -594,20 +597,18 @@ html {
 .footer-links a {
     color: var(--bs-black);
     text-decoration: none;
+    font-weight: 400;
 }
 
 .footer-links a:hover {
     text-decoration: underline;
 }
 
-.footer-links a.footer-privacy-active {
-    font-weight: 700;
-    text-decoration: underline;
-}
-
+.footer-links a.footer-privacy-active,
 .footer-links a.footer-terms-active {
     font-weight: 700;
     text-decoration: underline;
+    text-underline-offset: 3px;
 }
 
 .site-footer p {
