@@ -402,6 +402,16 @@ body {
         height: 350px;
     }
 
+    .office-box {
+        position: static;
+        max-width: none;
+        border-radius: 0;
+    }
+
+    .office-box p {
+        font-size: 16px;
+    }
+
     .send-button {
         width: 100%;
     }
