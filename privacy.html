@@ -3,31 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Home | Mitolokal</title>
-    <meta name="description" content="Welcome to Mitolokal.">
-
-    <link rel="stylesheet" href="css/styles.css">
+    <title>Privacy Policy - Mitolokal</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-    <header class="site-header">
-
-        <div class="logo">
-            <img src="images/mitolokallogo.jpg" alt="Mitolokal Logo">
-        </div>
-
-        <nav class="main-nav">
-            <ul class="navbar-nav">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="index.html#shop">Shop</a></li>
-                <li><a href="index.html#about">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-
-    </header>
+    <div class="page-wrapper">
+        <header class="site-header">
+            <div class="logo-container">
+                <img src="mitolokallogo.jpg" alt="Mitolokal Logo" class="logo" onerror="this.style.display='none'; document.getElementById('fallback-logo').style.display='block';">
+                <span id="fallback-logo" class="fallback-logo" style="display:none;"> MITOLOKAL </span>
+            </div>
+            <nav class="main-nav">
+                <a href="#home">Home</a>
+                <a href="#shop">Shop</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </header>
 
         <main class="policy-container">
             <div class="policy-header">
@@ -84,7 +80,7 @@
             <section id="section-4" class="policy-section">
                 <h3>4. What choices can you make about your data</h3>
                 <p>
-                    You have full control over your personal information and may at any time request to access, update, correct, or permanently delete the personal data we hold about you. You can also choose to withdraw your consent for data processing at any time, provided there are no pending legal or transactional requirements to retain your records. To exercise any of these options or update your preferences, please reach out to us at <a href="mailto:mitolokal@gmail.com">mitolokal@gmail.com</a>
+                    You have full control over your personal information and may at any time request to access, update, correct, or permanently delete the personal data we hold about you. You can also choose to withdraw your consent for data processing at any time, provided there are no pending legal or transactional requirements to retain your records. To exercise any of these options or update your preferences, please reach out to us at <a href="mailto:hello@examplewebsite142.com">hello@examplewebsite142.com</a>
                 </p>
             </section>
 
@@ -124,17 +120,13 @@
         </main>
     </div>
 
-    <!--FOOTER-->
     <footer class="site-footer">
-        <ul class="footer-links">
-            <li><a href="#">Privacy</a></li>
-            <li><a href="terms.html">Terms</a></li>
-        </ul>
-        <p>&copy; Mitolokal. All rights reserved.</p>
+        <div class="footer-links">
+            <span>Mitolokal &copy; 2026</span>
+            <a href="privacy.html" class="active-footer-link">Privacy</a>
+            <a href="terms.html">Terms</a>
+        </div>
     </footer>
-
-</body>
-</html>
 
     <button id="backToTop" title="Go to top">↑ Top</button>
 
